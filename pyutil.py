@@ -309,7 +309,7 @@ class Util(object):
         self.OS = sys.platform
 
     def get_folder(self, parent):
-        return askdirectory(parent=parent)
+        return askdirectory(parent=parent,mustexist=1)
 
     def get_file(self, parent, ext='', title='Factura Libre'):
         filetypes = [(ext, ext)]
